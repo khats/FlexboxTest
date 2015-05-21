@@ -1,5 +1,74 @@
-body {
+﻿body {
+  background: #71716E;
+  color: white;
+}
+.root {
   background: red;
 }
-
-/*# sourceMappingURL=maps/main.css.map */
+.root .child {
+  margin: 5px;
+  padding: 5px;
+  background: green;
+}
+.container1 {
+  display: flex;
+  flex-flow: row wrap;
+}
+.container2 {
+  display: flex;
+  flex-flow: column wrap;
+}
+.container3 {
+  display: flex;
+  flex-flow: row wrap;
+}
+.container3 .item3-1 {
+  flex-grow: 1;
+}
+.container3 .item3-2 {
+  flex-grow: 3;
+}
+.container4 {
+  display: flex;
+  flex-flow: row wrap;
+}
+.container4 .item4-1 {
+  order: 1;
+}
+.container4 .item4-2 {
+  order: 3;
+}
+.container4 .item4-3 {
+  order: 2;
+}
+.container5 {
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 500px;
+}
+.container5 .item5-1 {
+  height: 50px;
+}
+.container5 .item5-2 {
+  flex-grow: 1;
+}
+.container5 .item5-2 .container5-2 {
+  display: flex;
+}
+.container5 .item5-2 .container5-2 .item5-2-1 {
+  flex-grow: 1;
+  background: #848421;
+}
+.container5 .item5-2 .container5-2 .item5-2-2 {
+  flex-grow: 3;
+  min-height: 700px;
+  background: gray;
+}
+.container5 .item5-2 .container5-2 .item5-2-3 {
+  flex-grow: 1;
+  background: blue;
+}
+.container5 .item5-3 {
+  height: 50px;
+}
+/*# sourceMappingURL=main.css.map */

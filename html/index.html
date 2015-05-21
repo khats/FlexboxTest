@@ -1,12 +1,41 @@
 <html>
-	<head>
-		<title>Flex box test</title>
-	</head>
-	<body>
-		<div>
-			<div>1</div>
-			<div>2</div>
-		    <div>5</div>
-		</div>
-	</body>
+<head>
+    <title>Flex box test</title>
+    <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+</head>
+<body>
+    <h1>Test 1 row</h1>
+    <div class="root container1">
+        <div class="child">1</div>
+        <div class="child">2</div>
+    </div>
+    <h1>Test 2 column</h1>
+    <div class="root container2">
+        <div class="child">1</div>
+        <div class="child">2</div>
+    </div>
+    <h1>Test 3 item proportions 1:3</h1>
+    <div class="root container3">
+        <div class="child item3-1">1</div>
+        <div class="child item3-2">2</div>
+    </div>
+    <h1>Test 4 Order</h1>
+    <div class="root container4">
+        <div class="child item4-1">1</div>
+        <div class="child item4-2">2</div>
+        <div class="child item4-3">3</div>
+    </div>
+    <h1>Test 5 header/footer/aside left/aside right/main</h1>
+    <div class="root container5">
+        <div class="child item5-1">1</div>
+        <div class="child item5-2">
+            <div class="container5-2">
+                <div class="item5-2-1">2-1</div>
+                <div class="item5-2-2">2-2</div>
+                <div class="item5-2-3">2-3</div>
+            </div>
+        </div>
+        <div class="child item5-3">3</div>
+    </div>
+</body>
 </html>
